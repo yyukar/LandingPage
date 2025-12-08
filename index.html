@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing page</title>
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen bg-gray-100 text-gray-900">
+    <!-- Top navbar -->
+    <header class="w-full bg-gray-100 py-4 border-gray-200">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Boxed navbar -->
+        <div
+          class="bg-white rounded-xl shadow-sm px-6 h-14 flex items-center justify-between"
+        >
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <div
+              class="h-7 w-7 rounded-full border-2 border-purple-500 flex items-center justify-center"
+            >
+              <span class="text-purple-500 text-lg leading-none">◎</span>
+            </div>
+          </div>
+
+          <!-- Nav links -->
+          <nav class="flex items-center gap-6 text-sm">
+            <a href="#" class="text-gray-600 hover:text-gray-900">Link</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">Link</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">Link</a>
+
+            <a
+              href="#"
+              class="inline-flex items-center rounded-md bg-purple-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-purple-700"
+            >
+              Sign up
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content container -->
+    <main class="max-w-6xl mx-auto px-4 py-10 space-y-16">
+      <!-- Hero section: text + image -->
+      <section class="grid gap-8 md:grid-cols-2">
+        <!-- Hero text + form -->
+        <div class="bg-white rounded-2xl shadow-sm p-10 flex flex-col">
+          <div class="space-y-4">
+            <p class="text-sm font-semibold text-purple-500">
+              Mamba design system
+            </p>
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+              Build it with<br />Mamba
+            </h1>
+            <p class="text-gray-500 text-sm md:text-base">
+              Modular and versatile. The ultimate design toolkit for savvy
+              technology startups.
+            </p>
+          </div>
+
+          <!-- Hero form -->
+          <form class="mt-8 space-y-3">
+            <input
+              type="text"
+              placeholder="Your name"
+              class="w-full rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-sm outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
+            />
+            <input
+              type="email"
+              placeholder="Email address"
+              class="w-full rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-sm outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500"
+            />
+            <button
+              type="submit"
+              class="w-full rounded-md bg-purple-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-purple-700 transition"
+            >
+              <p>Join the waitlist</p>
+            </button>
+          </form>
+        </div>
+
+        <!-- Hero image -->
+        <div
+          class="bg-white rounded-2xl shadow-sm overflow-hidden flex items-stretch"
+        >
+          <img
+            src="https://picsum.photos/200"
+            alt="Stairs"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </section>
+
+      <!-- "How it works" heading -->
+      <section class="text-center space-y-2">
+        <p
+          class="text-xs font-semibold tracking-[0.2em] text-purple-500 uppercase"
+        >
+          How it works
+        </p>
+        <h2 class="text-3xl font-extrabold tracking-tight">
+          Building with Mamba is simple
+        </h2>
+      </section>
+
+      <!-- Three steps cards -->
+      <section class="grid gap-6 md:grid-cols-3">
+        <!-- Step 1 -->
+        <article class="bg-white rounded-2xl shadow-sm p-6 flex flex-col gap-3">
+          <div
+            class="h-8 w-8 rounded-full bg-purple-600 text-white flex items-center justify-center text-sm font-bold"
+          >
+            1
+          </div>
+          <div class="text-sm leading-relaxed">
+            <span class="font-bold">Nulla.</span>
+            <span class="text-gray-700">
+              Nostrum, corrupti blanditiis. Illum, architecto?
+            </span>
+          </div>
+        </article>
+
+        <!-- Step 2 -->
+        <article class="bg-white rounded-2xl shadow-sm p-6 flex flex-col gap-3">
+          <div
+            class="h-8 w-8 rounded-full bg-purple-600 text-white flex items-center justify-center text-sm font-bold"
+          >
+            2
+          </div>
+          <div class="text-sm leading-relaxed">
+            <span class="font-bold">Accusantium.</span>
+            <span class="text-gray-700">
+              Vitae saepe atque neque sunt eius dolor veniam alias debitis?
+            </span>
+          </div>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="bg-white rounded-2xl shadow-sm p-6 flex flex-col gap-3">
+          <div
+            class="h-8 w-8 rounded-full bg-purple-600 text-white flex items-center justify-center text-sm font-bold"
+          >
+            3
+          </div>
+          <div class="text-sm leading-relaxed">
+            <span class="font-bold">Maxime.</span>
+            <span class="text-gray-700">
+              Expedita temporibus culpa reprehenderit doloribus consectetur
+              odio!
+            </span>
+          </div>
+        </article>
+      </section>
+
+      <!-- Bottom row: image + testimonial -->
+      <section class="grid gap-8 md:grid-cols-2">
+        <!-- Image card -->
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <img
+            src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="City lights"
+            class="w-full h-64 object-cover"
+          />
+        </div>
+
+        <!-- Testimonial card -->
+        <article
+          class="bg-white rounded-2xl shadow-sm p-8 flex flex-col justify-between"
+        >
+          <div class="space-y-4 text-center md:text-left">
+            <!-- Info icon -->
+            <div class="flex md:justify-start justify-center">
+              <div
+                class="h-8 w-8 rounded-full border-2 border-purple-500 flex items-center justify-center text-purple-500 text-sm"
+              >
+                ⓘ
+              </div>
+            </div>
+            <!-- Quote text -->
+            <p class="text-sm italic text-gray-700">
+              "Et, dignissimos obcaecati. Recusandae praesentium doloribus
+              vitae? Rem unde atque mollitia!"
+            </p>
+            <!-- Author -->
+            <div class="text-xs text-gray-500">
+              <p class="font-semibold text-gray-700">Leroy Jenkins</p>
+              <p>CEO of Company Co.</p>
+            </div>
+          </div>
+
+          <!-- Pagination dots -->
+          <div
+            class="mt-6 flex items-center justify-center md:justify-start gap-1"
+          >
+            <span class="h-2 w-2 rounded-full bg-gray-400"></span>
+            <span class="h-2 w-2 rounded-full bg-gray-300"></span>
+            <span class="h-2 w-2 rounded-full bg-gray-300"></span>
+            <span class="h-2 w-2 rounded-full bg-gray-300"></span>
+          </div>
+        </article>
+      </section>
+
+      <!-- "Create with us" text block -->
+      <section class="mt-16">
+        <div class="bg-white rounded-2xl shadow-sm p-10">
+          <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
+            Create with us
+          </h2>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+            facilis quod accusantium beatae cum nam adipisci reiciendis omnis
+            possimus error quo animi voluptas magni, at incidunt. Nulla ex at
+            ullam corporis quidem adipisci vitae, perferendis dolorem libero
+            minus atque tenetur enim pariatur cupiditate commodi in beatae, ipsa
+            eligendi? Quis, saepe.
+          </p>
+        </div>
+      </section>
+
+      <!-- Featured article + 3 small cards -->
+      <section class="mt-10">
+        <div class="space-y-6">
+          <!-- Featured article card -->
+          <div
+            class="bg-white rounded-2xl shadow-sm overflow-hidden grid md:grid-cols-2"
+          >
+            <img
+              src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Sand dunes"
+              class="w-full h-64 md:h-full object-cover"
+            />
+            <div class="p-8 flex flex-col justify-between">
+              <div class="space-y-4">
+                <span
+                  class="inline-flex px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-700"
+                >
+                  Business
+                </span>
+                <h3 class="text-2xl md:text-3xl font-bold leading-tight">
+                  Curating a workplace that inspires team movement
+                </h3>
+              </div>
+
+              <div class="mt-6 text-xs text-gray-500 space-y-1">
+                <p>November 30, 2020</p>
+                <p>By Leroy Jenkins</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Three small feature cards -->
+          <div class="grid gap-4 md:grid-cols-3">
+            <article
+              class="bg-white rounded-2xl shadow-sm p-5 text-sm leading-relaxed"
+            >
+              <p>
+                <span class="font-semibold">Panel-based blocks.</span>
+                <span class="text-gray-700">
+                  Flexible panels that are perfect for building functional
+                  layouts.
+                </span>
+              </p>
+            </article>
+
+            <article
+              class="bg-white rounded-2xl shadow-sm p-5 text-sm leading-relaxed"
+            >
+              <p>
+                <span class="font-semibold">Responsive design.</span>
+                <span class="text-gray-700">
+                  Panels look great no matter the device.
+                </span>
+              </p>
+            </article>
+
+            <article
+              class="bg-white rounded-2xl shadow-sm p-5 text-sm leading-relaxed"
+            >
+              <p>
+                <span class="font-semibold">Premium support.</span>
+                <span class="text-gray-700">
+                  Join over 50 000 satisfied customers who use our templates.
+                </span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our team section -->
+      <section class="mt-16">
+        <div class="bg-white rounded-2xl shadow-sm p-16 space-y-8">
+          <!-- Heading -->
+          <div class="text-center space-y-2">
+            <h2 class="text-3xl md:text-4xl font-extrabold">
+              Our team is here to help you.
+            </h2>
+            <p class="text-sm text-gray-500">Meet our crew &gt;</p>
+          </div>
+
+          <!-- Team image -->
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://images.pexels.com/photos/713149/pexels-photo-713149.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Team seats"
+              class="w-full h-64 md:h-72 object-cover"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 mb-[1px] max-w-6xl mx-auto px-4">
+      <!-- Boxed footer -->
+      <div
+        class="bg-white rounded-2xl shadow-sm px-6 h-14 flex items-center justify-between text-xs text-gray-500"
+      >
+        <span class="font-semibold text-gray-700">Mamba</span>
+
+        <!-- Social / text icons -->
+        <div class="flex items-center gap-4">
+          <!-- Email -->
+          <a
+            href="#"
+            class="hover:text-gray-700 flex items-center justify-center h-5"
+          >
+            ✉
+          </a>
+
+          <!-- Twitter/X -->
+          <a
+            href="#"
+            class="hover:text-gray-700 flex items-center justify-center h-5"
+          >
+            X
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="#"
+            class="hover:text-gray-700 flex items-center justify-center h-5"
+          >
+            {}
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
